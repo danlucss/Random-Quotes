@@ -59,7 +59,7 @@ export const Quotes = () => {
                         </div>
                     </div>
                     <div className="quotes-btns">
-                        <a id="tweet-quote" className="quotes-btn" href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer"><BsTwitter /></a>
+                        <a id="tweet-quote" className="quotes-btn" href="https://twitter.com/intent/tweet" target="_blank" rel={quote}><BsTwitter /></a>
                         <button id="new-quote" className="quotes-btn" onClick={getNextQuote}> <BsArrowRight /></button>
 
 
