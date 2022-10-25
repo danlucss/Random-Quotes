@@ -1,0 +1,60 @@
+.quote-container {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 60px);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-box {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1;
+    color: #000;
+    .quotes-text {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .quotes-author {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .quotes-btns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .quotes-btn {
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}
